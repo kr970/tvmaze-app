@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+	<div id="authorization" class="login-wrap">
+		<div class="login">
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+			<label for="tab-1" class="tab">Sign In</label>
+			<div class="login-form">
+				<div class="sign-in-group">
+						<input type="text" id="login" class="input input-common" placeholder="Username"> 
+						<input type="password" class="input input-common" data-type="password" placeholder="Password">
+						<input type="submit" id="submit" class="submit input-common" value="Sign In">
+				</div>
+			</div>
+		</div>
+	</div>
+	<header id="header" class="header not-visible">
+		<nav class="menu">
+			<ul class="menu__list">
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#" id="link-films">Films</a>
+				</li>
+				<li>
+					<a href="#" id="link-fav">Favourite</a>
+				</li>
+				<li>
+					<a href="#">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="search">
+			<input id="input-search" class="search__input" type="text">
+			<button id="btn-search" class="search__btn">search</button>
+		</div>
+		<div class="user-info">
+			<p id="user-name"></p>
+			<img id="user-logo" src="images/user-logo.png">
+		</div>
+	</header>
+	<main id="main" class="main not-visible">
+		<div id="filter" class="filter">
+			<select id="genres" class="filter__select">
+				<option id="all-genres">All</option> 
+				<option>Drama</option> 
+				<option>Romance</option> 
+				<option>Comedy</option> 
+				<option>Crime</option> 
+			</select>
+			<select id="languages" class="filter__select">
+				<option id="all-languages">All</option> 
+				<option>English</option> 
+				<option>French</option> 
+				<option>Japanese</option> 
+			</select>
+			<select id="pages" class="filter__select">
+				<option id="default-page-size">12</option> 
+				<option>8</option> 
+				<option>4</option> 
+			</select>
+		</div>
+		<div class="container">
+			<section class="films"></section>
+			<div id="pagination">
+				<div class="pagination">
+					<button id="btn-prev" class="pagination__btn"><span>&#8249;</span></button>
+					<div class="navigation">
+						<div id="current-page" class="navigation__btn"></div>
+						<div id="page-list" class="navigation__btn">of</div>
+						<div id="max-page" class="navigation__btn"></div>
+					</div>
+					<button id="btn-next" class="pagination__btn"><span>&#8250;</span></button>
+				</div>
+				<div id="pagination-all-pages" class="hidden">
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer id="footer" class="footer not-visible"></footer>
+	<script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>
+
+
+

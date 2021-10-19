@@ -1,0 +1,13 @@
+.main {
+    flex-grow: 1;
+    background-color: $main-color;
+}
+.films { 
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    p {
+        font-size: 40px;
+    }
+}

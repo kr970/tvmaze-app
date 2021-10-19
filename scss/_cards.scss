@@ -1,0 +1,23 @@
+.film { 
+    font-size: 18px;
+    max-width: 210px;
+    margin: 0 20px 30px 20px;
+    &__title {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        a {
+            display: block;
+            color: $dark-purple;
+            margin: 10px 0;
+            cursor: pointer;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+.no-avaliable-poster {
+    max-width: 210px;
+    height: 295px;
+}
